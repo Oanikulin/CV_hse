@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: check latex
+        uses: ./
