@@ -1,5 +1,5 @@
 name: "check latex"
 description: 'builds pushed dockerfile'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile
