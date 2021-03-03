@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install --yes \
 
 COPY ./CV/resume.* ./entrypoint.sh home/
 
+RUN ["chmod", "+x", "/home/entrypoint.sh"]
+
 WORKDIR /home
 
 ENTRYPOINT ["/home/entrypoint.sh"]
