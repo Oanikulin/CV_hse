@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/bash -l
 
-echo $0
 ls
 pdflatex ./resume.tex
 if [ $? != 0 ] ; then
