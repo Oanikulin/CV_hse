@@ -3,11 +3,12 @@
 name: CI
 
 on:
-  push:
+  push
   
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: Dockefile
     steps:
 
       - name: Checkout
