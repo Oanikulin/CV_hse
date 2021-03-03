@@ -8,10 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: Dockefile
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: check latex
         uses: ./
