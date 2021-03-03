@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install --yes \
 	texlive-science \
 	cm-super
 
-COPY ./CV/resume.cls /resume.cls
-COPY ./CV/resume.tex /resume.tex
+COPY ./CV/resume.cls /home/resume.cls
+COPY ./CV/resume.tex /home/resume.tex
 COPY dockerentry.sh /entrypoint.sh
 
 RUN ["chmod", "+x", "/entrypoint.sh"]
